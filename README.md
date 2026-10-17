@@ -1,16 +1,111 @@
-# React + Vite
+# Digital Wallet — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React-based frontend for a Digital Wallet & Payment Management System. It connects to a Spring Boot REST API to provide user authentication, wallet management, fund transfers, transaction history, and administrative features.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Frontend:** https://digital-wallet-frontend-phi.vercel.app/
 
-## React Compiler
+**Backend API:** https://digital-wallet-backend-xz1g.onrender.com
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**API Documentation:** https://digital-wallet-backend-xz1g.onrender.com/swagger-ui/index.html
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- User registration and login
+- JWT-based authentication
+- Wallet balance display
+- Add virtual funds
+- Transfer funds between users
+- Transaction history
+- Admin dashboard
+- User, wallet, and transaction management for administrators
+- API integration using Axios
+- Responsive user interface
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- Axios
+- CSS
+- React Router, where used in the application
+- Vercel for deployment
+
+## Architecture
+
+The frontend communicates with the Spring Boot backend through REST APIs using HTTP and JSON. Authenticated requests include the JWT token.
+
+**Backend repository:** https://github.com/Nikhil-Arsham/digital-wallet-backend
+
+## Run Locally
+
+### Prerequisites
+
+- Node.js
+- npm
+- A running instance of the Digital Wallet backend
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Nikhil-Arsham/digital-wallet-frontend.git
+cd digital-wallet-frontend
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure the backend URL
+
+Create a `.env` file in the project root:
+
+```env
+VITE_API_URL=http://localhost:8080
+```
+
+For the deployed backend, configure:
+
+```env
+VITE_API_URL=https://digital-wallet-backend-xz1g.onrender.com
+```
+
+Use the appropriate backend URL for your environment.
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal, usually `http://localhost:5173`.
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+The production build is generated in the `dist` directory.
+
+## Deployment
+
+The frontend is deployed on Vercel. The production environment variable `VITE_API_URL` points to the deployed Spring Boot backend.
+
+## Related Repository
+
+**Backend:** https://github.com/Nikhil-Arsham/digital-wallet-backend
+
+## Disclaimer
+
+This project is developed for educational and demonstration purposes. Wallet balances represent virtual funds and are not real money.
+
+## Author
+
+**Nikhil Arsham**
+
+GitHub: https://github.com/Nikhil-Arsham
