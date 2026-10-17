@@ -109,3 +109,17 @@ This project is developed for educational and demonstration purposes. Wallet bal
 **Nikhil Arsham**
 
 GitHub: https://github.com/Nikhil-Arsham
+
+## Screenshots
+
+### User Dashboard
+![User Dashboard](screenshots/user-dashboard.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### Transaction History
+![Transaction History](screenshots/transactions.png)
+
+### API Documentation
+![Swagger API](screenshots/swagger-api.png)
